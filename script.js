@@ -13,3 +13,9 @@ const revealEls = document.querySelectorAll('.reveal');
     });
   }, {threshold:0.4});
   ledgerRows.forEach(el=>io2.observe(el));
+ const navToggle = document.querySelector('.nav-toggle');
+const navLinks = document.querySelector('.nav-links');
+
+navToggle.addEventListener('click', () => {
+  navLinks.classList.toggle('open');
+});
